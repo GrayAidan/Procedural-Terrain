@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C7E583A2-DC20-3E34-2B1C-B0E1D4550BDC}</ProjectGuid>
+    <ProjectGuid>{92D2E764-231F-3B96-7594-F2DDF4AFCA09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,12 +64,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\EscMenu.cs" />
-    <Compile Include="Assets\Scripts\FPSInput.cs" />
-    <Compile Include="Assets\Scripts\GroundedCheck.cs" />
-    <Compile Include="Assets\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Scripts\PerlinNoise.cs" />
-    <Compile Include="Assets\Scripts\PlayerWorldMove.cs" />
+    <Compile Include="Assets\Scripts\MapDisplay.cs" />
+    <Compile Include="Assets\Scripts\MapGenEditor.cs" />
+    <Compile Include="Assets\Scripts\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\Noise.cs" />
+    <Compile Include="Assets\Scripts\Old\EscMenu.cs" />
+    <Compile Include="Assets\Scripts\Old\FPSInput.cs" />
+    <Compile Include="Assets\Scripts\Old\GroundedCheck.cs" />
+    <Compile Include="Assets\Scripts\Old\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\Old\PerlinNoise.cs" />
+    <Compile Include="Assets\Scripts\Old\PlayerWorldMove.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -254,7 +258,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -602,31 +606,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/All my extra shit/Homework/Unity Projects/Personal/ProceduralTerrain/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Aidan/Documents/GitHub/Procedural-Terrain/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
