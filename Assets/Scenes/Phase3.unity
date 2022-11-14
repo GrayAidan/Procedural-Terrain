@@ -151,12 +151,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8d4cc08e9e0834490c01cbfcd47d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawMode: 1
   mapWidth: 100
   mapHeight: 100
-  noiseScale: 27.6
-  octaves: 4
+  noiseScale: 46.3
+  octaves: 5
   persistance: 0.526
-  lacunarity: 2.26
+  lacunarity: 2
+  regions:
+  - name: WaterDeep
+    height: 0.2
+    colour: {r: 0, g: 0.2627451, b: 0.49019608, a: 0}
+  - name: Water
+    height: 0.3
+    colour: {r: 0, g: 0.38039216, b: 0.7058824, a: 0}
+  - name: ShallowWater
+    height: 0.4
+    colour: {r: 0, g: 0.42745098, b: 0.7921569, a: 0}
+  - name: Sand
+    height: 0.45
+    colour: {r: 0.990566, g: 0.9881778, b: 0.62144, a: 0}
+  - name: LowGrass
+    height: 0.55
+    colour: {r: 0.25490198, g: 0.5764706, b: 0, a: 0}
+  - name: Grass
+    height: 0.6
+    colour: {r: 0.16470589, g: 0.36862746, b: 0, a: 0}
+  - name: Rock
+    height: 0.7
+    colour: {r: 0.35686275, g: 0.23777983, b: 0.17254904, a: 0}
+  - name: HighRock
+    height: 0.82
+    colour: {r: 0.28235295, g: 0.1683949, b: 0.14509805, a: 0}
+  - name: Snow
+    height: 1
+    colour: {r: 1, g: 1, b: 1, a: 0}
   seed: 0
   offset: {x: 0, y: 0}
   autoUpdate: 1
@@ -223,7 +252,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8febee0e366de6d49b9b1d496c72ceea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

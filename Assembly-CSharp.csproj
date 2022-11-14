@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>4.11.3.0</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>4.11.4.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.4.17f1</UnityVersion>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\MapDisplay.cs" />
     <Compile Include="Assets\Scripts\MapGenEditor.cs" />
     <Compile Include="Assets\Scripts\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\MeshGen.cs" />
     <Compile Include="Assets\Scripts\Noise.cs" />
     <Compile Include="Assets\Scripts\Old\EscMenu.cs" />
     <Compile Include="Assets\Scripts\Old\FPSInput.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\Old\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Old\PerlinNoise.cs" />
     <Compile Include="Assets\Scripts\Old\PlayerWorldMove.cs" />
+    <Compile Include="Assets\Scripts\TextureGen.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
