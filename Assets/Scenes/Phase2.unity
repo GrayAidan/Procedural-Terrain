@@ -231,6 +231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textureRender: {fileID: 396441443}
+  meshFilter: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!114 &1084615337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,9 +245,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8d4cc08e9e0834490c01cbfcd47d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawMode: 0
   mapWidth: 100
   mapHeight: 100
   noiseScale: 0.3
+  octaves: 0
+  persistance: 0
+  lacunarity: 1
+  regions: []
+  seed: 0
+  offset: {x: 0, y: 0}
+  meshHeightMutiplier: 0
+  meshHeightCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   autoUpdate: 1
 --- !u!4 &1084615338
 Transform:
@@ -255,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084615335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.33655, y: -116.06635, z: 123.0692}
+  m_LocalPosition: {x: 78.33655, y: -116.06635, z: 1430}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

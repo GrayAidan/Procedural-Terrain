@@ -29,7 +29,7 @@ public class FPSInput : MonoBehaviour
         move = transform.TransformDirection(move);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        if(Input.GetKey("left shift") && groundedBox.grounded)
+        if(Input.GetKey("left shift"))
         {
             playerSpeed = playerSprintSpeed;
         }

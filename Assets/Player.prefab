@@ -113,10 +113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 63716789132851219}
   groundedBox: {fileID: 63716790443155561}
+  playerSpeed: 2
+  playerWalkSpeed: 4
+  playerSprintSpeed: 12
   jumpHeight: 5
   gravityValue: -9.81
-  flying: 0
-  spaceClickCheck: 0
 --- !u!143 &63716789132851219
 CharacterController:
   m_ObjectHideFlags: 0
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239fa595a76164e4d9ab5c92be7050bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
+  axes: 1
   sensitivityHor: 9
   sensitivityVert: 9
   minVert: -45
@@ -194,7 +195,7 @@ Camera:
   m_GameObject: {fileID: 63716790221449366}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.6273585, g: 0.7722746, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -279,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63716790443155564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.058, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 63716789132851209}
